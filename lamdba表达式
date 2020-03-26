@@ -1,0 +1,17 @@
+using System;
+
+namespace Wrox.ProCSharp.Delegates
+{
+    class DelLambda
+    {
+        public static void TwoParam()
+        {
+            DelLambdaTwo delLambdaTwo = (p1, p2) =>
+            {
+                return p1 * p2;
+            };
+            Console.WriteLine("{0}*{1}={2}", 10, 2, delLambdaTwo(10,2));
+        }
+
+    }
+}
