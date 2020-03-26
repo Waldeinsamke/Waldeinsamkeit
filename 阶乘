@@ -1,0 +1,24 @@
+using System;
+
+namespace practice_1._1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("请输入正整数N=");
+            int n = int.Parse(Console.ReadLine());
+            double sum = 0;
+            for (double i = 1; i <= n; i++)
+            {
+                double sum1 = 1;
+                for (double j = 1; j <= n; j++)
+                {
+                    sum1 *= j;
+                }
+                sum += sum1;
+            }
+            Console.WriteLine("阶乘和" + sum);
+        }
+    }
+}
