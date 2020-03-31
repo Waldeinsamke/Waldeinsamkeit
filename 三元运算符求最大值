@@ -1,0 +1,24 @@
+using System;
+
+namespace 输入三个整数_以从大到小方式输出
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("请输入x数值");
+            double x = double.Parse(Console.ReadLine());
+            Console.WriteLine("请输入y数值");
+            double y = double.Parse(Console.ReadLine());
+            Console.WriteLine("请输入z数值");
+            double z = double.Parse(Console.ReadLine());
+            double min = x > y ? (y > z ? z : y) : (x > z ? z : x);
+            double zhong = x > y ? (y > z ? y : (x > z ? z : x)) : (x > z ? x : (y > z ? z : y));
+            double max = x > y ? (x > z ? x : z) : (y > z ? y : z);
+            Console.WriteLine(max);
+            Console.WriteLine(zhong);
+            Console.WriteLine(min);
+        }
+    }
+}
+//三元运算符的格式为 [条件语句] ? [表达式1] : [表达式2]
