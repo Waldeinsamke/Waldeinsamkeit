@@ -7,3 +7,4 @@ static class StaticUtilities
 }
 
 调用HeⅡerMethodO不 需要 StaticUtilities 类型的对象。使用类型名即可进行该调用:
+StaticUtilities.HelperMethod();
