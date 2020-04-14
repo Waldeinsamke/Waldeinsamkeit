@@ -7,6 +7,7 @@ namespace Wrox
         static void Main()
         {
             Console.WriteLine("Pi is" + MathTest.GetPi());
+            int x = MathTest.GetSquareOf(5);
             Console.WriteLine("Square of 5 is" + x);
             MathTest math = new MathTest();
             math.value = 30;
